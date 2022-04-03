@@ -33,5 +33,5 @@ The new code ran on my work laptop and took just over four minutes to finish. Th
 
 [^1]: There will be future posts about `dplyr`.
 [^2]: This indicator involved the use of publicly available data so I was free to use the code at home.
-[^3]: That said, at the time of writing there is <a href=\"https://github.com/tidyverse/dplyr/issues/2813\">an open github issue</a> about the slowness of `mutate_at()` in the current version of `dplyr`.
-[^4]: Various properties and generators of random numbers from various distributions are discussed in <a href=\"https://mattischrome.com/generate-random-numbers-in-r/\">this post</a>.
+[^3]: That said, at the time of writing there is [an open github issue](https://github.com/tidyverse/dplyr/issues/2813/) about the slowness of `mutate_at()` in the current version of `dplyr`.
+[^4]: Various properties and generators of random numbers from various distributions are discussed in [this post](https://mattischrome.com/generate-random-numbers-in-r/).
