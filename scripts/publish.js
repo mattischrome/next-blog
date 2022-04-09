@@ -9,5 +9,5 @@
 // 2. No draft key in the YAML
 // 3. No YAML full stop (what if we've just dropped a plain .txt file in the drafts folder?)
 
-// Possible additional features 
+// Possible additional features
 // 1. Allow user to publish to different pages etc
