@@ -17,43 +17,43 @@ const replace = require('replace')
 const root = process.cwd()
 
 const getDrafts = () => {
-    const draftPath = path.join(root, 'data', 'blog', 'drafts')
-    const draftList = fs.readdirSync(draftPath).map((filename) => path.parse(filename).base)
-    return draftList
+  const draftPath = path.join(root, 'data', 'blog', 'drafts')
+  const draftList = fs.readdirSync(draftPath).map((filename) => path.parse(filename).base)
+  return draftList
 }
 
 inquirer
-    .prompt([
-        {
-            name: 'selectedDraft',
-            message: 'Choose a draft to promote to published status:',
-            type: 'list',
-            choices: getDrafts,
-        },
-    ])
-    .then((answers) => {
-        // Perform actions that publish the post
-        const old_path = path.join(root, 'data', 'blog', 'drafts', answers.selectedDraft)
-        const new_path = path.join(root, 'data', 'blog', answers.selectedDraft)
-        fs.rename(old_path,new_path,((err) => {
-            if(err){
-                return console.error(err)
-            } else {
-                console.log("Success!")
-            }
-        }))
-        replace({
-            regex: 'draft: true',
-            replacement: 'draft: false',
-            paths: [new_path],
-            recursive: true,
-            silent: true,
-        })
+  .prompt([
+    {
+      name: 'selectedDraft',
+      message: 'Choose a draft to promote to published status:',
+      type: 'list',
+      choices: getDrafts,
+    },
+  ])
+  .then((answers) => {
+    // Perform actions that publish the post
+    const old_path = path.join(root, 'data', 'blog', 'drafts', answers.selectedDraft)
+    const new_path = path.join(root, 'data', 'blog', answers.selectedDraft)
+    fs.rename(old_path, new_path, (err) => {
+      if (err) {
+        return console.error(err)
+      } else {
+        console.log('Success!')
+      }
     })
-    .catch((error) => {
-        if(error.isTtyError) {
-            console.log("Prompt could not be rendered in the current environment")
-        } else {
-            console.log("Something went wrong, sorry!")
-        }
+    replace({
+      regex: 'draft: true',
+      replacement: 'draft: false',
+      paths: [new_path],
+      recursive: true,
+      silent: true,
     })
+  })
+  .catch((error) => {
+    if (error.isTtyError) {
+      console.log('Prompt could not be rendered in the current environment')
+    } else {
+      console.log('Something went wrong, sorry!')
+    }
+  })
