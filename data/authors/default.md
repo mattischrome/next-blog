@@ -9,8 +9,35 @@ twitter: https://twitter.com/mattischrome
 github: https://github.com/mattischrome
 ---
 
-Matthew Dorey is a health economist in the Public Health and Social Research Unit at West Sussex County Council. His research interests include the valuation of public health interventions, classifying tangible and non-tangible economic outcomes for health interventions, and the communication of health information using novel technology platforms. 
+[mattischrome.com]() is the personal blog of Matthew Dorey
 
-He has a PhD in Mathematical Biology from the University of Bath in the UK. He also has degrees in health economics from the University of Surrey and a masters degree in Networks and Data Science from the University of York. His PhD thesis was about the spread of diseases on social networks. 
+### Features
 
-He began his career at the Health Protection Agency, an arm of the UK government charged with protecting the nation's health and advancing the cause of public health. This later became known as Public Health England and the same functions are now carried out by two entities: the UK Health Security Authority and the Office of Health Inequalities and Disparities. Between 2008 and 2013, Matthew was the mathematical modeller for the National Chlamydia Screening Programme (NCSP).
+- Book reviews
+- Music reviews
+- Understated Classics (slightly too personal album reviews)
+- Very short film reviews
+- Short stories
+- Travels in Europe
+- Travels in South America
+- Travels in Australia (less of that but hopefully extend soon)
+- Mathematics
+- Economics
+- Statistics
+- Art exhibitions
+- Gluten and tomato free recipes
+- The meta of blogging
+- Civ 6 Play Guide
+- Games and how computers might play them
+- How to be a human
+- And more
+
+This is a blog that will never pop up a window that tries to get you to sign up to a newsletter. But there is an [RSS feed](/atom.xml) if you like that kind of thing.
+
+### Mugshot
+
+![Me in an Italian cafe in Lombardy, 2018](/static/images/ident/BlogPic.jpg)
+
+### Other projects
+
+I own two other domain names which I'm hoping to use for professional blogs. One will discuss several ideas I have about health, economics and other matters. The other will discuss how to actually implement those ideas in the real world. When they launch links will be provided here.
