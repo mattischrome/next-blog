@@ -24,6 +24,7 @@ public/sitemap.xml
 .DS_Store
 /data/blog/.DS_Store
 /data/blog/drafts
+/data/blog/drafts/.Ulysses-Settings.plist
 
 # debug
 *.log
